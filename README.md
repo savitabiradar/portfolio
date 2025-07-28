@@ -14,7 +14,7 @@ This website showcases my skills, projects, resume, and a little about who I am 
 
 - 💻 **HTML5**
 - 🎨 **CSS3** (with smooth animations ✨)
-- 🧠 Learning **Java**, **C++**, **.NET**, **Data Warehousing**, and **Data Mining**
+
 
 ---
 
