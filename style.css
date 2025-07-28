@@ -1,0 +1,188 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #fdfbfb, #ebedee);
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+  animation: fadeInBody 1.2s ease-in;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #6200ea, #9c27b0);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  animation: slideDown 1s ease-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 36px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: underline;
+}
+
+/* Sections */
+.intro, .content {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  animation: fadeInUp 1.5s ease;
+}
+
+.intro img {
+  width: 180px;
+  border-radius: 50%;
+  margin: 20px 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.intro img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.content h2, .content h3 {
+  color: #6200ea;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content ul li {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #555;
+  position: relative;
+  padding-left: 20px;
+}
+
+.content ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #9c27b0;
+  font-weight: bold;
+}
+
+/* Project Cards (for projects.html) */
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #6a1b9a;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #6200ea;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project-card a:hover {
+  color: #9c27b0;
+  text-decoration: underline;
+}
+
+/* Contact Page */
+.contact-info p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.contact-info a {
+  color: #6200ea;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #e1bee7;
+  font-size: 14px;
+  color: #333;
+  margin-top: 60px;
+}
+
+/* Animations */
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
